@@ -148,9 +148,12 @@ https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
 
 The code needs to be configured as follows:
 Set **year**:  For example, y = 22 corresponds to the year 2022.
-<img src="/resources/images/Picture10.png" width=40% height=40%>
+<img src="/resources/images/Picture10.png" width=30% height=30%>
 
 Set **data acquisition start time**. For example, the configuration below will start acquisition at 16:30:00. Units must be entered beginning with a non-zero digit (e.g., “5” instead of “05” for 5 minutes).
 
-<img src="/resources/images/Picture11.png" width=40% height=40%>
+<img src="/resources/images/Picture11.png" width=50% height=50%>
 
+Set **number of recorded files**, e.g., 2000
+
+<img src="/resources/images/Picture12.png" width=50% height=50%>
