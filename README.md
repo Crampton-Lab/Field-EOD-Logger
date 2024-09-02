@@ -115,7 +115,7 @@ At the logger end of the 4-conductor cable the four wires were soldered to two r
 
 **Figure. 4.** Waterproof enclosure, cable assembly, and electrodes for deployment of EOD logger in shallow forest stream habitats.
 
-<img src="/resources/images/Picture7.png" width=80% height=80%>
+<img src="/resources/images/Picture7.png" width=100% height=100%>
 
 <br />
 
