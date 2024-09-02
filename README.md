@@ -56,4 +56,8 @@ The 1.65V offset is programmatically removed in the Arduino code during the savi
 
 **Dual-amp board:**
 
-<img src="/resources/images/Picture3.png" width=40% height=40%>
+<img src="/resources/images/Picture3.png" width=80% height=80%>
+
+<br />
+
+<img src="/resources/images/Picture4.png" width=80% height=80%>
