@@ -29,7 +29,7 @@ The Eagle files required for ordering our printed circuit boards are available a
 
 **Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
 
-<img src="/resources/images/Picture1.png" width=80% height=80%>
+<img src="/resources/images/Picture1.png" width=60% height=60%>
 
 Following Mucha et al. (2022) our EOD logger utilized the Teensy 3.5, a programmable microcontroller compatible with the Arduino Integrated Development Environment (IDE). This device, manufactured by PJRC (Sherwood, OR) allows single-ended acquisition from multiple analog-to-digital converter inputs with a nominal resolution of 16 bits, although the effective resolution is 12 bits. It operates with battery voltages ranging from 3.6 to 6V DC. The Teensy 3.5 features a 120 MHz Cortex-M4F CPU, a micro-SD card slot, and a micro-USB port for uploading Arduino IDE sketches (programs) from a computer. The Teensy 3.5 connects to and powers an external real-time clock (RTC) board (Adafruit DS3231, Adafruit Industries LLC, New York, NY) via the wired connections summarized in Fig. 3, providing precise time signal during operation. Our microcontroller board’s solder pads also accept the Teensy 4.1, which offers a faster CPU speed but is limited to 10-bit resolution, requires a 3.3V DC battery voltage, and necessitates different Arduino libraries.
 
@@ -50,8 +50,10 @@ The 1.65V offset is programmatically removed in the Arduino code during the savi
 **Figure 2.** Circuit schematics.
 **Microcontroller board:**
 
-<img src="/resources/images/Picture2.png" width=80% height=80%>
+<img src="/resources/images/Picture2.png" width=40% height=40%>
 
 <br />
 
 **Dual-amp board:**
+
+<img src="/resources/images/Picture3.png" width=40% height=40%>
