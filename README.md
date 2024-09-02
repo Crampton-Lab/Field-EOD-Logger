@@ -27,7 +27,8 @@ The Eagle files required for ordering our printed circuit boards are available a
 
 * Microcontroller board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/microcontroller
 
-**Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
+**Figure 1.**  Photograph of the EOD logger.
+>a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
 
 <img src="/resources/images/Picture1.png" width=60% height=60%>
 
@@ -113,8 +114,7 @@ At the logger end of the 4-conductor cable the four wires were soldered to two r
 
 <br />
 
-**Figure. 4.**
->Waterproof enclosure, cable assembly, and electrodes for deployment of EOD logger in shallow forest stream habitats.
+**Figure. 4.** Waterproof enclosure, cable assembly, and electrodes for deployment of EOD logger in shallow forest stream habitats.
 
 <img src="/resources/images/Picture7.png" width=80% height=80%>
 
@@ -133,8 +133,7 @@ We used cable ties to attach the two ground electrodes (channel 1 ground = black
 ## Enclosure
 For shallow forest-stream and swamp deployment of the EOD logger, we used a plastic waterproof field box (Strategy model SSFLAMBX1), typically used for storing shotgun cartridges, to enclose the logger in the field (Fig. 4). The logger and battery pack were secured inside the box using a block made of cut layers of Styrofoam, held together with elastic bands (see Fig. 5). Additional layers of Styrofoam were added to prevent the logger and battery pack from rattling inside the box during transit from the field camp to the stream site. The 4-conductor electrode cable exited the box via a PG-9 cable gland mounted in a hole drilled through the field box. The batteries must be replaced with fully charged ones and the micro-SD card swapped out daily. While it is possible to replace the battery packs and micro-SD card in situ, on the stream bank, this often risks rain or drops of water from surrounding vegetation entering the enclosure. To mitigate this, the entire enclosure can be quickly disconnected from the cable and carried to and from the stream to the field camp, if the distance is not too great. Cable gland plugs can be inserted into the cable glands during transit to ensure the enclosure remains watertight.
 
-**Figure 5.**
->Field transport of EOD loggers
+**Figure 5.** Field transport of EOD loggers
 >At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.
 
 
