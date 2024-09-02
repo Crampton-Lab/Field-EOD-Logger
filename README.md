@@ -39,11 +39,19 @@ Our bio-amplifier features two channels, each providing single-ended amplificati
 
 <br />
 
-**Virtual ground**: We use a virtual ground as the baseline for our signals, achieved by employing the TLC2272 dual operational amplifier (TLC2271-1A for channel 1, TLC2272-1B for channel 2) in a voltage follower configuration. This setup includes 10 microF bypass capacitors to suppress noise and a voltage divider to halve the power supply voltage. As a result, the baseline for our signals is the power supply voltage divided by two. When used with the microcontroller, which regulates the dual-amp’s voltage supply to 3.3V DC, the baseline is set at 1.65V (3.3V/2). The clipping voltages around this 1.65V baseline, determined by the output swing of the gain stage 1 instrumentation amplifier (AD623ANZ), range from 0.2 V (minimum) to 3V (maximum), providing a peak-to-peak voltage of 2.8V.
+_**Virtual ground**_: We use a virtual ground as the baseline for our signals, achieved by employing the TLC2272 dual operational amplifier (TLC2271-1A for channel 1, TLC2272-1B for channel 2) in a voltage follower configuration. This setup includes 10 microF bypass capacitors to suppress noise and a voltage divider to halve the power supply voltage. As a result, the baseline for our signals is the power supply voltage divided by two. When used with the microcontroller, which regulates the dual-amp’s voltage supply to 3.3V DC, the baseline is set at 1.65V (3.3V/2). The clipping voltages around this 1.65V baseline, determined by the output swing of the gain stage 1 instrumentation amplifier (AD623ANZ), range from 0.2 V (minimum) to 3V (maximum), providing a peak-to-peak voltage of 2.8V.
 
 <br />
 
 The 1.65V offset is programmatically removed in the Arduino code during the saving of the digitized signal to a Microsoft signed 16-bit PCM (.wav) file format on the microcontroller’s microSD card. In this process, the original voltage range (0V to 3.3V) is converted to a range of -32,767 to +32,768, with zero representing the 1.65V baseline. This format distributes the full voltage range across the nominal 16-bit range of 216 = 65,536 positions. As a result, all electric fish EODs are centered at zero, whether they are from pulse-type fish, where there is a clear 0V baseline between pulses, or wave-type fish, where the 0V baseline is not recognizable from EOD landmarks.
 
+<br />
 
+**Figure 2.** Circuit schematics.
+**Microcontroller board:**
 
+<img src="/resources/images/Picture2.png" width=80% height=80%>
+
+<br />
+
+**Dual-amp board:**
