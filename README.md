@@ -61,3 +61,29 @@ The 1.65V offset is programmatically removed in the Arduino code during the savi
 <br />
 
 <img src="/resources/images/Picture4.png" width=80% height=80%>
+
+<br />
+
+<img src="/resources/images/Picture5.png" width=80% height=80%>
+
+<br />
+
+**Figure 3.** Schematic for the connection of the dual-amp board, microcontroller board, and battery power.
+
+<img src="/resources/images/Picture6.png" width=80% height=80%>
+
+<br />
+
+_**Gain:**_ Each channel has three gain stages, G1, G2, and G3 (see Fig. 2), each equipped with bypass capacitors to suppress power supply noise. G1 utilizes the Analog Devices AD623ANZ instrumentation amplifier IC, while G2 and G3 utilize the Texas Instruments TLC2272 dual operational amplifier (op-amp) IC in a negative feedback loop configuration. The negative feedback loop in each gain stage inverts the signal. Since our dual-amp has three gain stages, the final amplified signal is inverted relative to the input. Consequently, an electric fish’s EOD will appear head positive on a given channel (when the fish is parallel to the ground-signal electrode axis) if its head is pointing toward the ground electrode.
+
+<br />
+
+Because the TLC2272 is a dual op-amp (i.e., the IC contains two separate amplifying circuits) we were able to perform gain stages 2 and 3 for a given channel on the same IC (see Figs. 1 and 2). Gain can be controlled at each stage by substituting resistors. The total gain of the dual-amp is calculated as the product of the gains for each gain stage. For our field work, we configured the device for a total gain of 90.36 (gain stage 1 = 5.02, stage 2 = 3, stage 3 = 6) +/- 0.3% for resistor tolerance, assuming resistors with 0.1% tolerance. Resistor substitution is straightforward because the resistors are inserted into female header sockets, allowing for easy replacement without the need for resoldering. Examples of the G1, G2, and G3 resistors configurations required for a variety of total gains, ranging from 1.21 to 600.6, are listed in Table 3.
+
+<br />
+
+_Gain stage 1_: We used the AD623ANZ instrumentation amplifier for gain stage 1 due to its high common-mode rejection, which maximizes the signal-to-noise ratio at the input. The gain of G1 is adjusted by substituting the gain resistor at the 2-position female connector at R5 (channel 1) and R14 (channel 2). Using resistors with 0.1% tolerance (i.e., within 0.1% of the nominal resistance value), gains of 2.0, 5.02 (default), and 10.09 are achieved with 100 k, 24.9 k, and 11 k resistors, respectively. The minimum allowable gain is 1 (unity gain), which is achieved by leaving R5/R14 unpopulated. We recommend caution if selecting a G1 gain of more than 10 For gain values below 10 the AD623ANZ maintains a completely flat frequency response from 0 to approximately 36 kHz, preserving the full frequency content of most electric fish signals (including all gymnotiform species). However, at a G1 gain of 20.02, achieved with a 5.23 k resistor, the frequency response begins to roll off around 20 kHz. This may be satisfactory for species with lower frequency contents, but not for those with higher frequency content, such as some species of Mormyridae (Osteoglossiformes). The AD623ANZ manufacturer’s manual provides further notes on gain-dependent frequency responses.
+
+<br />
+
+_Gain stages 2 and 3_: In a negative feedback loop the gain of the TLC2272 op-amp is calculated by the ratio Rf/Rg, where Rf is the substitutable feedback resistor and Rg is the fixed gain resistor (Ulaby and Maharbiz 2010). The TLC2272 maintains a flat frequency response across all gain levels up to 2.18 MHz, ensuring that the chosen gains for gain stages 2 and 3 do not affect the frequency content of the amplified signals. The gain of stage 2 can be adjusted by substituting the Rf resistors at R11 (channel 1) and R20 (channel 2), while the gain of stage 3 can be adjusted by substituting the Rf resistors at R13 (channel 1) and R22 (channel 2). For both gain stages 2 and 3, the gain of a given channel is determined by the nominal resistance of the resistor divided by 1000. For example, gains of 1.1, 3, and 10 are achieved using 1.1k, 3k, and 10k resistors, respectively. We recommend setting gains no lower than 1.1 for the TLC2272, as using resistors with values less than 1.1 k may cause instability. Additionally, the frequency response may change if the G1 gain exceeds x10. Distributing the gain equally between gain stages 2 and 3 does not provide a significant advantage.
