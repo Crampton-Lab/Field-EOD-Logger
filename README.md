@@ -16,9 +16,6 @@ Our EOD logger (Fig. 1) features a double-decker design. The upper deck’s prin
 
 <br />
 
-Our EOD logger (Fig. 1) features a double-decker design. The upper deck’s printed circuit board (PCB) hosts the microcontroller, real-time clock contacts, and battery power socket. The lower deck’s PCB houses a dual bio-amplifier. Signals from the two bio-amplifier channels are transmitted to the microcontroller via headers connecting the upper and lower-deck PCBs. We refer to the upper board as the “microcontroller board” and the lower deck as the “dual-amp board.” Circuit schematics for both boards are provided in Fig. 2. A component list is presented in Table 1, and the bioamplifier specifications are listed in Table 2. The total cost of all components for one logger, including the battery pack, electrode assembly, and waterproof enclosure was approximately $200 in 2022. We printed our circuit boards at PCBWay, Hangzhou, China (https://www.pcbway.com/).
-The Eagle files required for ordering our printed circuit boards are available at the following locations:
-Dual-amp board:)).
 The Eagle files required for ordering our printed circuit boards are available at the following locations:
 
 * Dual-amp board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/dual-amp
