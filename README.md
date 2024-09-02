@@ -30,7 +30,7 @@ The Eagle files required for ordering our printed circuit boards are available a
 **Figure 1.**  Photograph of the EOD logger.
 >a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
 
-<img src="/resources/images/Picture1.png" width=60% height=60%>
+<img src="/resources/images/Picture1a.png" width=60% height=60%>
 
 Following Mucha et al. (2022) our EOD logger utilized the Teensy 3.5, a programmable microcontroller compatible with the Arduino Integrated Development Environment (IDE). This device, manufactured by PJRC (Sherwood, OR) allows single-ended acquisition from multiple analog-to-digital converter inputs with a nominal resolution of 16 bits, although the effective resolution is 12 bits. It operates with battery voltages ranging from 3.6 to 6V DC. The Teensy 3.5 features a 120 MHz Cortex-M4F CPU, a micro-SD card slot, and a micro-USB port for uploading Arduino IDE sketches (programs) from a computer. The Teensy 3.5 connects to and powers an external real-time clock (RTC) board (Adafruit DS3231, Adafruit Industries LLC, New York, NY) via the wired connections summarized in Fig. 3, providing precise time signal during operation. Our microcontroller board’s solder pads also accept the Teensy 4.1, which offers a faster CPU speed but is limited to 10-bit resolution, requires a 3.3V DC battery voltage, and necessitates different Arduino libraries.
 
@@ -51,27 +51,27 @@ The 1.65V offset is programmatically removed in the Arduino code during the savi
 **Figure 2.** Circuit schematics.
 **Microcontroller board:**
 
-<img src="/resources/images/Picture2.png" width=40% height=40%>
+<img src="/resources/images/Picture2a.png" width=40% height=40%>
 
 <br />
 
 **Dual-amp board:**
 
-<img src="/resources/images/Picture3.png" width=80% height=80%>
+<img src="/resources/images/Picture3a.png" width=80% height=80%>
 
 <br />
 
-<img src="/resources/images/Picture4.png" width=80% height=80%>
+<img src="/resources/images/Picture4a.png" width=80% height=80%>
 
 <br />
 
-<img src="/resources/images/Picture5.png" width=80% height=80%>
+<img src="/resources/images/Picture5a.png" width=80% height=80%>
 
 <br />
 
 **Figure 3.** Schematic for the connection of the dual-amp board, microcontroller board, and battery power.
 
-<img src="/resources/images/Picture6.png" width=80% height=80%>
+<img src="/resources/images/Picture6a.png" width=80% height=80%>
 
 <br />
 
@@ -116,11 +116,11 @@ At the logger end of the 4-conductor cable the four wires were soldered to two r
 
 **Figure. 4.** Waterproof enclosure, cable assembly, and electrodes for deployment of EOD logger in shallow forest stream habitats.
 
-<img src="/resources/images/Picture7.png" width=80% height=80%>
+<img src="/resources/images/Picture7a.png" width=40% height=40%>
 
 <br />
 
-<img src="/resources/images/Picture8.png" width=80% height=80%>
+<img src="/resources/images/Picture8a.png" width=40% height=40%>
 
 <br />
 
@@ -136,7 +136,7 @@ For shallow forest-stream and swamp deployment of the EOD logger, we used a plas
 **Figure 5.** Field transport of EOD loggers
 >At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.
 
-<img src="/resources/images/Picture9a.png" width=80% height=80%>
+<img src="/resources/images/Picture9a.png" width=40% height=40%>
 
 ## Arduino code
 The microcontroller was programmed to record consecutive 1-minute, two-channel .wav audio files onto a microSD card using a modified version of Arduino Integrated Development (IDE) Environment code by Stefan Mucha (https://github.com/muchaste/EOD-logger). This code (teensy_2_4_channel_12242021.ino) is available at: 
