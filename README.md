@@ -1,6 +1,6 @@
 # _eFish Field Logger_: An electric fish logger for automated field electric signal recordings
 
-William GR Crampton, Michael A. Haag, & Lok Poon
+<sub>William GR Crampton, Michael A. Haag, & Lok Poon</sub>
 
 <br />
 
