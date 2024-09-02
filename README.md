@@ -115,7 +115,7 @@ At the logger end of the 4-conductor cable the four wires were soldered to two r
 
 **Figure. 4.** Waterproof enclosure, cable assembly, and electrodes for deployment of EOD logger in shallow forest stream habitats.
 
-<img src="/resources/images/Picture7.png" width=20% height=20%>
+<img src="/resources/images/Picture7.png" width=80% height=80%>
 
 <br />
 
@@ -134,7 +134,10 @@ For shallow forest-stream and swamp deployment of the EOD logger, we used a plas
 
 **Figure 5.** Field transport of EOD loggers
 
-At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.
+<span style="font-size:0.5em;">Text goes here</span>
+
+<span style="font-size:0.5em;">At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.</span>
+
 
 <img src="/resources/images/Picture9.png" width=80% height=80%>
 
