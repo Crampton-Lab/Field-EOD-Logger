@@ -22,6 +22,20 @@ The Eagle files required for ordering our printed circuit boards are available a
 
 * Microcontroller board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/microcontroller
 
-`**Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).`
+**Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
 
 <img src="/resources/images/Picture1.png" width=80% height=80%>
+
+Following Mucha et al. (2022) our EOD logger utilized the Teensy 3.5, a programmable microcontroller compatible with the Arduino Integrated Development Environment (IDE). This device, manufactured by PJRC (Sherwood, OR) allows single-ended acquisition from multiple analog-to-digital converter inputs with a nominal resolution of 16 bits, although the effective resolution is 12 bits. It operates with battery voltages ranging from 3.6 to 6V DC. The Teensy 3.5 features a 120 MHz Cortex-M4F CPU, a micro-SD card slot, and a micro-USB port for uploading Arduino IDE sketches (programs) from a computer. The Teensy 3.5 connects to and powers an external real-time clock (RTC) board (Adafruit DS3231, Adafruit Industries LLC, New York, NY) via the wired connections summarized in Fig. 3, providing precise time signal during operation. Our microcontroller board’s solder pads also accept the Teensy 4.1, which offers a faster CPU speed but is limited to 10-bit resolution, requires a 3.3V DC battery voltage, and necessitates different Arduino libraries.
+
+## Bio-amplifier design
+
+Our bio-amplifier features two channels, each providing single-ended amplification. Single-ended amplifiers measure the potential difference between the signal (“positive”) pole of the electrode pair and the ground electrode. The signal voltage output (Vout) is equal to the total gain of the amplifier multiplied by Vpos – Vneg, where Vpos is the voltage at the positive electrode and Vneg is voltage at the ground electrode. While single-ended amplifiers typically have a slightly inferior signal-to-noise ratio compared to differential amplifiers, they require fewer amplifier integrated circuits (ICs), and associated components, thereby reducing costs and simplifying assembly. Due to the shared grounding among all inputs on the digitizer, our single-ended design is limited to two electrode pairs, which share a common ground. The orthogonal L-shaped pattern of our electrodes, described below, is compatible with this design.
+
+<br />
+
+**Virtual ground**: We use a virtual ground as the baseline for our signals, achieved by employing the TLC2272 dual operational amplifier (TLC2271-1A for channel 1, TLC2272-1B for channel 2) in a voltage follower configuration. This setup includes 10 F bypass capacitors to suppress noise and a voltage divider to halve the power supply voltage. As a result, the baseline for our signals is the power supply voltage divided by two. When used with the microcontroller, which regulates the dual-amp’s voltage supply to 3.3V DC, the baseline is set at 1.65V (3.3V/2). The clipping voltages around this 1.65V baseline, determined by the output swing of the gain stage 1 instrumentation amplifier (AD623ANZ), range from 0.2 V (minimum) to 3V (maximum), providing a peak-to-peak voltage of 2.8V. 
+The 1.65V offset is programmatically removed in the Arduino code during the saving of the digitized signal to a Microsoft signed 16-bit PCM (.wav) file format on the microcontroller’s microSD card. In this process, the original voltage range (0V to 3.3V) is converted to a range of -32,767 to +32,768, with zero representing the 1.65V baseline. This format distributes the full voltage range across the nominal 16-bit range of 216 = 65,536 positions. As a result, all electric fish EODs are centered at zero, whether they are from pulse-type fish, where there is a clear 0V baseline between pulses, or wave-type fish, where the 0V baseline is not recognizable from EOD landmarks.
+
+
+
