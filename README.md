@@ -147,26 +147,26 @@ https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
 <br />
 
 The code needs to be configured as follows:
-Set **year**:  For example, y = 22 corresponds to the year 2022.
-<img src="/resources/images/Picture10.png" width=20% height=20%>
+1. Set **year**:  For example, y = 22 corresponds to the year 2022.
+<img src="/resources/images/Picture10.png" width=25% height=25%>
 
-Set **data acquisition start time**. For example, the configuration below will start acquisition at 16:30:00. Units must be entered beginning with a non-zero digit (e.g., “5” instead of “05” for 5 minutes).
+2. Set **data acquisition start time**. For example, the configuration below will start acquisition at 16:30:00. Units must be entered beginning with a non-zero digit (e.g., “5” instead of “05” for 5 minutes).
 
 <img src="/resources/images/Picture11.png" width=50% height=50%>
 
-Set **number of recorded files**, e.g., 2000
+3. Set **number of recorded files**, e.g., 2000
 
 <img src="/resources/images/Picture12.png" width=50% height=50%>
 
-Set **number of channels** (select 2)
+4. Set **number of channels** (select 2)
 
 <img src="/resources/images/Picture13.png" width=50% height=50%>
 
-Set the analog-to-digital converter **sampling rate** (select 49152 for 49,152 Hz)
+5. Set the analog-to-digital converter **sampling rate** (select 49152 for 49,152 Hz)
 
 <img src="/resources/images/Picture14.png" width=50% height=50%>
 
-Set **buffer size**. This will define the length of each recorded file at a given sampling rate (select 360 for 60-second recordings at 49,152 Hz). Selecting 360 will result in consecutive (back-to-back) 60-second recordings.
+6. Set **buffer size**. This will define the length of each recorded file at a given sampling rate (select 360 for 60-second recordings at 49,152 Hz). Selecting 360 will result in consecutive (back-to-back) 60-second recordings.
 
 <img src="/resources/images/Picture15.png" width=50% height=50%>
 
@@ -179,9 +179,9 @@ The year, number of channels, sampling rate and buffer size only need to be sele
 The user has limited control over the sampling rate and file duration. For example:
 At a sampling rate of 49,152 Hz:
 
-`If buffer size = 360, recorded file duration = 60 seconds
-If buffer size = 180, recorded file duration = 30 seconds
-If buffer size = 90, recorded file duration = 15 seconds.`
+>If buffer size = 360, recorded file duration = 60 seconds
+>If buffer size = 180, recorded file duration = 30 seconds
+>If buffer size = 90, recorded file duration = 15 seconds.
 
 <br />
 
