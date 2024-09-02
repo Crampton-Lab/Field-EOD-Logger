@@ -22,6 +22,6 @@ The Eagle files required for ordering our printed circuit boards are available a
 
 * Microcontroller board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/microcontroller
 
-**Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
+`**Figure 1.**  Photograph of the EOD logger. a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).`
 
 <img src="/resources/images/Picture1.png" width=80% height=80%>
