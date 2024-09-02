@@ -217,8 +217,5 @@ https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
 
 ## References
 
-Mucha, S., F. Oehlert, L. J. Chapman, and R. Krahe. 2022. A spark in the dark: Uncovering natural activity patterns of mormyrid weakly electric fish. Frontiers in Ecology and Evolution 10: 870043.
-
-<br />
-
+Mucha, S., F. Oehlert, L. J. Chapman, and R. Krahe. 2022. A spark in the dark: Uncovering natural activity patterns of mormyrid weakly electric fish. Frontiers in Ecology and Evolution 10: 870043.  
 Ulaby, F. T., and M. M. Maharbiz. 2010. Circuits. National Technology and Science Press, Austin TX.
