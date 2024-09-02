@@ -27,6 +27,8 @@ The Eagle files required for ordering our printed circuit boards are available a
 
 * Microcontroller board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/microcontroller
 
+<br />
+
 **Figure 1.**  Photograph of the EOD logger.
 >a) Microcontroller board connected above the dual-amp board and connected to a battery pack. RTC = real-time clock. G1 through G3 refer to gain stages 1 through 3. The “R” numbers correspond to the resistors listed in the components list (Table 1).
 
@@ -136,9 +138,19 @@ For shallow forest-stream and swamp deployment of the EOD logger, we used a plas
 **Figure 5.** Field transport of EOD loggers
 >At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.
 
-
 <img src="/resources/images/Picture9.png" width=80% height=80%>
 
+## Arduino code
+The microcontroller was programmed to record consecutive 1-minute, two-channel .wav audio files onto a microSD card using a modified version of Arduino Integrated Development (IDE) Environment code by Stefan Mucha (https://github.com/muchaste/EOD-logger). This code (teensy_2_4_channel_12242021.ino) is available at: 
+https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
 
+<br />
 
+The code needs to be configured as follows:
+Set **year**:  For example, y = 22 corresponds to the year 2022.
+<img src="/resources/images/Picture10.png" width=80% height=80%>
+
+Set **data acquisition start time**. For example, the configuration below will start acquisition at 16:30:00. Units must be entered beginning with a non-zero digit (e.g., “5” instead of “05” for 5 minutes).
+
+<img src="/resources/images/Picture11.png" width=80% height=80%>
 
