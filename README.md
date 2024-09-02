@@ -160,15 +160,15 @@ The code needs to be configured as follows:
 
 4. Set **number of channels** (select 2)
 
-<img src="/resources/images/Picture13.png" width=50% height=50%>
+<img src="/resources/images/Picture13.png" width=60% height=60%>
 
 5. Set the analog-to-digital converter **sampling rate** (select 49152 for 49,152 Hz)
 
-<img src="/resources/images/Picture14.png" width=50% height=50%>
+<img src="/resources/images/Picture14.png" width=40% height=40%>
 
 6. Set **buffer size**. This will define the length of each recorded file at a given sampling rate (select 360 for 60-second recordings at 49,152 Hz). Selecting 360 will result in consecutive (back-to-back) 60-second recordings.
 
-<img src="/resources/images/Picture15.png" width=50% height=50%>
+<img src="/resources/images/Picture15.png" width=45% height=45%>
 
 <br />
 
@@ -179,14 +179,48 @@ The year, number of channels, sampling rate and buffer size only need to be sele
 The user has limited control over the sampling rate and file duration. For example:
 At a sampling rate of 49,152 Hz:
 
->If buffer size = 360, recorded file duration = 60 seconds
->If buffer size = 180, recorded file duration = 30 seconds
->If buffer size = 90, recorded file duration = 15 seconds.
+- If buffer size = 360, recorded file duration = 60 seconds
+- If buffer size = 180, recorded file duration = 30 seconds
+- If buffer size = 90, recorded file duration = 15 seconds.
 
 <br />
 
 At a sampling rate of 98,304 Hz:
 
-`If buffer size = 720, recorded file duration = 60 seconds
-If buffer size = 360, recorded file duration = 30 seconds`
+- If buffer size = 720, recorded file duration = 60 seconds
+- If buffer size = 360, recorded file duration = 30 seconds
 
+<br />
+
+We include a spreadsheet “sample-rate-calculator.xlsx” to calculate allowable sample rates, and file durations, available at: 
+https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
+
+## Loading Arduino and Arduino libraries and launching Arduino scripts on the EOD logger
+See instructions in “EOD-logger-Arduino-instructions.pdf”, available at: 
+https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
+
+## Tables
+
+**Table 1.** EOD logger component list
+
+<img src="/resources/images/Picture16.png" width=80% height=80%>
+
+<br />
+
+**Table 2.** EOD logger: technical specifications
+
+<img src="/resources/images/Picture17.png" width=80% height=80%>
+
+<br />
+
+**Table 3.** Example gain configurations for the EOD logger. Rg = resistance in kOhm of the gain resistor. G1 = gain stage 1, G2 = gain stage 2, G3 = gain stage 3. Measured total gain should lie within +/- 0.3% of the theoretical total gain listed below, assuming 0.1% resistor tolerance in each of the three gain stages.
+
+<img src="/resources/images/Picture18.png" width=80% height=80%>
+
+## References
+
+Mucha, S., F. Oehlert, L. J. Chapman, and R. Krahe. 2022. A spark in the dark: Uncovering natural activity patterns of mormyrid weakly electric fish. Frontiers in Ecology and Evolution 10: 870043.
+
+<br />
+
+Ulaby, F. T., and M. M. Maharbiz. 2010. Circuits. National Technology and Science Press, Austin TX.
