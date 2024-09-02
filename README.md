@@ -136,7 +136,7 @@ For shallow forest-stream and swamp deployment of the EOD logger, we used a plas
 
 <span style="font-size:0.5em;">Text goes here</span>
 
-<span style="font-size:0.1em;">At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.</span>
+<small>At our field site we retrieved all six EOD loggers daily to replace the battery packs and micro-SD cards, and to re-launch the Arduino IDE logging schedule on the loggers, before returning to the study site to reconnect the electrode cables. Note the use of Styrofoam casing to prevent the components from rattling inside the field boxes. Lok Poon, on the right, at the field camp near Caño Yahuarcaca, Leticia, Colombia.</small>
 
 
 <img src="/resources/images/Picture9.png" width=80% height=80%>
