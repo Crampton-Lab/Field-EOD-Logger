@@ -201,7 +201,7 @@ https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/resources
 
 **Table 1.** EOD logger component list
 
-<img src="/resources/images/Picture16.png" width=80% height=80%>
+<img src="/resources/images/Picture16a.png" width=80% height=80%>
 
 <br />
 
