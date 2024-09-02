@@ -1,9 +1,6 @@
 # _eFish Field Logger_: An electric fish logger for automated field electric signal recordings
 
-<sub>William GR Crampton, Michael A. Haag, & Lok Poon</sub>
-
-<br />
-
+William GR Crampton, Michael A. Haag, & Lok Poon  
 Department of Biology, University of Central Florida, 4100 Libra Dr., 32816, Orlando, FL, USA
 
 ## Summary
