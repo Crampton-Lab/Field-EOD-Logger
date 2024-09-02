@@ -23,3 +23,4 @@ The Eagle files required for ordering our printed circuit boards are available a
 * Microcontroller board: https://github.com/Crampton-Lab/eFish-Field-Logger/tree/main/microcontroller
 
 
+<img src="/resources/images/Picture1.png" width=50% height=50%>
